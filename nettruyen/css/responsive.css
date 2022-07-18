@@ -1,0 +1,49 @@
+@media (max-width: 534px){
+    .drop-notification{
+        width: 100%;
+    }
+
+    .drop-notification__comment{
+        width: 100%;
+        position: fixed;
+        left: 0;
+    }
+}
+
+
+
+@media (min-width: 535px) and (max-width:739){
+    .drop-notification{
+        left: 0;
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media (min-width:740px) and (max-width: 1023px){
+    .container-seach{
+        width: 300px;
+    }
+
+    .drop-notification{
+        right: 0;
+    }
+
+    .drop-category{
+        left: -235px;
+        width: 400px;
+    }
+    .drop-ratings{
+        left:-185px;
+        width: 300px;
+    }
+}
+
+@media (min-width:1024px){
+    .drop-notification{
+        right: 0;
+    }
+}

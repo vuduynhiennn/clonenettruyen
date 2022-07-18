@@ -1,0 +1,158 @@
+
+/* -------------navbar---------- */
+.navbar{
+    /* height: 40px; */
+    background-color: black;
+}
+
+.navbar-nav{
+
+}
+
+.navbar-list{
+    display: flex;
+    padding-left: 20px;
+}
+
+.navbar-list > *{
+    list-style: none;
+    border-right: 1px solid #999;
+    padding: 0px 10px;
+    position: relative;
+}
+
+
+.navbar-list > * >a{
+    line-height: 40px;
+    display: block;
+    text-decoration: none;
+}
+.navbar-list__home > .home{
+    color: orange;
+}
+.setcolor{
+    color: white;
+}
+.setcolor:hover{
+    color: orange;
+}
+
+.changecolor{
+    color: black;
+}
+
+.changecolor:hover{
+    color: blueviolet;
+}
+
+.navbar-list__item > a > i{
+    font-style: inherit;
+}
+
+.category:hover .drop-category{
+    display: block;
+}
+
+.ratings:hover .drop-ratings{
+    display: block;
+}
+/* ------------------------------------------- */
+
+
+/* -------------drop-category---------- */
+.drop-category{
+    color: black;
+    position: absolute;
+    left: 0;
+    min-width: 600px;
+    background-color: white;
+    display: none;
+    border: 0.5px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.drop-category__list{
+    padding: 20px 0px;
+}
+
+.drop-category__item{
+
+}
+
+.drop-category__item > ul > li{
+    list-style: none;
+}
+
+.drop-category__item > ul > li > a{
+    text-decoration: none;
+    line-height: 30px;
+    color: black;
+}
+
+.drop-category__item > ul > .item__red >a{
+    color: rgb(238, 24, 24);
+    font-weight: bold;
+}
+/* ---------------------------- -------------*/
+
+
+/* -------------drop-ratings -------------*/
+.drop-ratings{
+    position: absolute;
+    left: 0;
+    color: black;
+    min-width: 300px;
+    border-radius: 0px 0px 10px 10px;
+    display: none;
+}
+
+
+.drop-ratings__item >ul {
+    padding-left: 0px;
+    border-right: -0.25px solid black;
+    /* border-left: 0.25px solid black; */
+
+}
+.drop-ratings__item>ul >li{
+    list-style: none;
+    height: 40px;
+    border: 0.25px solid rgb(192, 185, 185);
+    background-color: white;
+}
+
+
+.drop-ratings__item>ul >li >a{
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+    display: block;
+}
+
+.drop-ratings__item > ul  > .rating-comic__full>a{
+    color: rgba(255, 2, 2, 0.699);
+    font-weight: bold;
+}
+
+.drop-ratings__item>ul >li >a:hover{
+    background-color: rgb(192, 185, 185);
+    color: blueviolet;
+}
+
+.drop-ratings__item > ul  > .rating-comic__full>a:hover{
+    color: rgba(255, 2, 2, 0.699);
+}
+.drop-ratings__item>ul >li >a>i{
+    padding-left: 20px;
+    width: 25px;
+}
+.rating-comic__full{
+   
+}
+
+.rating-comic__full>a{
+    color: red;
+}
+
+
+/* -------------drop-ratings -------------*/

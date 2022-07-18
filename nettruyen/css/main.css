@@ -1,0 +1,72 @@
+.main-container{
+    height: 500px;
+    background-color: #252525;
+}
+
+#main__topcomic{
+    transition: all 800ms ease 0s;
+}
+
+.main-container__topcomic{
+    overflow: hidden;
+}
+
+.main-container__topcomic >div >h2{
+    color: orange;
+    padding: 15px 15px 10px 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.topcomic__item{
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.topcomic__item > div{
+    max-width: 180px;
+    margin: auto;
+}
+
+.topcomic__item__info{
+    height: 50px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+}
+
+.topcomic__item__info >a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 3px 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.topcomic__item__img > a > img{
+    width: 100%;
+    border: -1px solid white;
+}
+
+.topcomic__item__info > div{
+    display: flex;
+}
+
+.topcomic__item__info > div > a{
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.topcomic__item__info > div > div{
+    color: white;
+    font-size: 12px;
+    line-height: 21px;
+}
