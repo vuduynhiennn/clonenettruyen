@@ -11,6 +11,10 @@
     overflow: hidden;
 }
 
+.main-container__topcomic >div{
+    position: relative;
+}
+
 .main-container__topcomic >div >h2{
     color: orange;
     padding: 15px 15px 10px 15px;
@@ -69,4 +73,36 @@
     color: white;
     font-size: 12px;
     line-height: 21px;
+}
+
+
+.topcomic__nextleft,
+.topcomic__nextright{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    background-color: rgba(255, 255, 255,0.6);
+    margin:0px 15px;
+    opacity: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+
+    border-radius: 4px;
+    color: #555;
+}
+
+.topcomic__nextleft:hover,
+.topcomic__nextright:hover{
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.topcomic__nextleft{
+
+}
+
+.topcomic__nextright{
+   right: 0; 
 }

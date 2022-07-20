@@ -51,10 +51,12 @@
 
 .category:hover .drop-category{
     display: block;
+    z-index: 1;
 }
 
 .ratings:hover .drop-ratings{
     display: block;
+    z-index: 1;
 }
 /* ------------------------------------------- */
 

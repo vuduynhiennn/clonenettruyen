@@ -40,6 +40,11 @@
         left:-185px;
         width: 300px;
     }
+
+    .topcomic__item{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
 }
 
 @media (min-width:1024px){

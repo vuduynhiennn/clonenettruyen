@@ -63,28 +63,6 @@ function settime(cout){
         }
 }
 
-// setInterval(() => {
-//     if(cout==0){
-//         setTimeout(() => {
-//             settime(cout);
-//             cout = cout +200
-//             console.log(cout)
-//             if(cout>1000){
-//                 cout=0;
-//             }
-            
-//         }, 5000);
-//     }
-//     else{
-//         settime(cout);
-//         cout = cout +200
-//         console.log(cout)
-//         if(cout>1000){
-//             cout=0;
-//         }
-//     }
-    
-// }, 2000);
 
 setInterval(() => {
     settime(cout);
@@ -95,6 +73,54 @@ setInterval(() => {
     }
     
 }, 5000);
+
+
+document.getElementById("nextright").onclick = function(){
+    cout=cout+200
+    settime(cout)
+    console.log("ê đcmm")
+}
+
+document.getElementById("nextleft").onclick = function(){
+    if(cout>=200){
+        cout=cout-200
+        settime(cout)
+        console.log("ê đcmm")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+//setInterval(() => {
+    //     if(cout==0){
+    //         setTimeout(() => {
+    //             settime(cout);
+    //             cout = cout +200
+    //             console.log(cout)
+    //             if(cout>1000){
+    //                 cout=0;
+    //             }
+                
+    //         }, 5000);
+    //     }
+    //     else{
+    //         settime(cout);
+    //         cout = cout +200
+    //         console.log(cout)
+    //         if(cout>1000){
+    //             cout=0;
+    //         }
+    //     }
+        
+    // }, 2000);
 
 
 
