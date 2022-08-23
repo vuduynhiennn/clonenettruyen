@@ -1,0 +1,85 @@
+.footer{
+    background-color: #202020;
+    min-height: 180px;
+}
+
+.footer--container{
+    padding-top: 10px;
+}
+
+.footer--logo{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer--logo >img{
+    width: 15%;
+}
+
+.footer--container__web{
+    overflow: hidden;
+}
+
+.footer--container__web >a{
+    color: orange;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.footer--container__web >a:hover{
+    color: red;
+}
+
+.footer--container__web >p{
+    color: rgb(200, 200, 200);
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.footer--container--key >p{
+    font-weight: bold;
+    color: white;
+    padding: 15px 0px 10px 0px;
+}
+
+.footer--container--key >ul{
+    padding: 0px 0px 40px 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer--container--key >ul >li{
+    font-size: 13px;
+    height: 25px;
+    line-height: 25px;
+    margin: 5px;
+    padding: 0px 5px;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+
+   
+}
+
+.dashboad{
+   position: fixed;
+   right: 30px;
+   bottom: 30px;
+}
+
+.dashboad >span >i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: 1px solid white;
+    text-align: center;
+    color: rgb(255, 0, 81);
+}
+
+.dashboad:hover >span >i{
+    border: 1px solid rgb(160, 160, 160);
+}

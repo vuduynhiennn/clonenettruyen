@@ -36,30 +36,27 @@ document.getElementById("show-notification").onclick = function() {
 }
 
 
-function animation(i){
-    document.getElementById("main__topcomic").style.transform = '`transform: translate3d(${i}px, 0px, 0px)`'
-}
+
 var cout=0
 function settime(cout){
         switch(cout){
             case 200:
-                document.getElementById("main__topcomic").style.transform = 'translate3d(-200px, 0px, 0px)';
+                document.getElementById("main__topcomic").style.transform =  'translate3d(-webkit-calc(var(--animation-comic) *1), 0px, 0px)' ;
                 break;
             case 400:
-                document.getElementById("main__topcomic").style.transform = 'translate3d(-400px, 0px, 0px)';
+                document.getElementById("main__topcomic").style.transform =  'translate3d(-webkit-calc(var(--animation-comic) *2), 0px, 0px)' ;
                 break ;   
             case 600:
-                document.getElementById("main__topcomic").style.transform = 'translate3d(-600px, 0px, 0px)';
+                document.getElementById("main__topcomic").style.transform =  'translate3d(-webkit-calc(var(--animation-comic) *3), 0px, 0px)' ;
                 break ;
             case 800:
-                document.getElementById("main__topcomic").style.transform = 'translate3d(-800px, 0px, 0px)';
+                document.getElementById("main__topcomic").style.transform =  'translate3d(-webkit-calc(var(--animation-comic) *4), 0px, 0px)' ;
                 break ;
             case 1000:
-                document.getElementById("main__topcomic").style.transform = 'translate3d(-1000px, 0px, 0px)';
+                document.getElementById("main__topcomic").style.transform =  'translate3d(-webkit-calc(var(--animation-comic) *5), 0px, 0px)' ;
                 break ;  
             default: 
-                document.getElementById("main__topcomic").style.transform = 'translate3d(0px, 0px, 0px)';
-            ;    
+                document.getElementById("main__topcomic").style.transform =  'translate3d(-webkit-calc(var(--animation-comic) *0), 0px, 0px)' ;  
         }
 }
 
@@ -72,7 +69,7 @@ setInterval(() => {
         cout=0;
     }
     
-}, 5000);
+}, 2000);
 
 
 document.getElementById("nextright").onclick = function(){
