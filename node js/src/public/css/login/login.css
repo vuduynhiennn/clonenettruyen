@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    background-color: rgb(68, 68, 68);
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px yellow;
+    background: linear-gradient(-13deg, rgb(165, 165, 165) -49%, rgb(0, 0, 0));;
+}
+
+
+.login >h3{
+    text-align: center;
+    font-size: 50px;
+    color: yellow;
+    margin-bottom: 60px;
+}
+
+.login-box{
+    position: relative;
+    overflow: hidden;
+}
+.login-box > input{
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+    margin-bottom: 40px;
+    padding: 30px 0px 10px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid yellow;
+    background-color: transparent;
+    color: white;
+}
+
+.login-box > label{
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    
+}
+
+.login-box > i{
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%);
+    right: 0;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.login-box > i:hover{
+    color: yellow;
+
+}
+
+.sm{
+    text-align: center;
+}
+
+.sm > button{
+    margin: auto;
+    height: 50px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px white;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.sm > button:hover{
+    color: red;
+    box-shadow: 0px 0px 25px red;
+    border: 1px solid red;
+}
+
+.login > H5{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.login > h5 > a{
+    color: orange;
+
+}
+
+.login > h5 > a:hover{
+    color: red;
+
+}
+
+
+

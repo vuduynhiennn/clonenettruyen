@@ -1,0 +1,26 @@
+<form action="" class="login">
+        <h3>Đăng Nhập</h3>
+       <div class="login-box">
+        <input type="text">
+        <label for="">Tài Khoản:</label>
+       </div>
+       <div class="login-box">
+        <input type="password" id="password">
+        <label for="">Mật Khẩu:</label>
+        <i class="fa-solid fa-eye-slash" id="checkpass"></i>
+       </div>
+       <div class="sm">
+        <button id="sm">Đăng Nhập</button>
+       </div>
+       
+        <h5><a href="/register">Đăng ký</a></h5>
+       
+    </form>
+
+    <script>
+        document.getElementById("checkpass").onclick = function(){
+            document.getElementById("password").type = "text"
+            console.log("jesd")
+            document.getElementById("checkpass").setAttribute("class","fa-solid fa-eye")
+        }
+    </script>
