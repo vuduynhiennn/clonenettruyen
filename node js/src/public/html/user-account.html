@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đọc truyện tranh online - Truyện gì cũng có - Nettruyen</title>  
+    <link href="./fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./User.css">
+    <link rel="stylesheet" href="./responsive.css">
+  
+</head>
+<body>
+    <div class="header grid ">
+        <div class="container row no-gutters nav">
+            <div class="container-logo col l-3 m-3">
+                <a href="#">
+                    <img src="logomtg.svg" alt="">
+                </a>
+            </div>
+            <div class="container-seach col l-5 m-5 c-0">
+               <div class="container-seach__input">
+                    <input type="text" placeholder="Tìm truyện...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+            </div>
+            <div class="container-notification col l-2 m-2">
+                <div class="container-notification__light" id="change-background">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div class="container-notification__message" id="show-notification">
+                    <i class="fa-solid fa-comment"></i>
+                    <div class="drop-notification" id="drop-notification">
+                        <div class="drop-notification__comment">
+                            <div class="drop-notification__top">
+                                <a href="">Thông Báo</a>
+                            </div>
+                            <div class="drop-notification__bottom">
+                                <div class="list-notification__comment">
+                                    <a href="#">
+                                        <div class="comment__img ">
+                                            <img src="./img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="comment__notify ">
+                                            <span><b>Thằng Nào Đó</b> đã trả lời bình luận của bạn trong truyện <b>Truyện Gì Đó</b></span> <br>
+                                            <i>xx min ago</i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list-notification__comment">
+                                    <a href="#">
+                                        <div class="comment__img ">
+                                            <img src="./img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="comment__notify ">
+                                            <span><b>Thằng Nào Đó</b> đã trả lời bình luận của bạn trong truyện <b>Truyện Gì Đó</b></span> <br>
+                                            <i>xx min ago</i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list-notification__comment">
+                                    <a href="#">
+                                        <div class="comment__img ">
+                                            <img src="./img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="comment__notify ">
+                                            <span><b>Thằng Nào Đó</b> đã trả lời bình luận của bạn trong truyện <b>Truyện Gì Đó</b></span> <br>
+                                            <i>xx min ago</i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list-notification__comment">
+                                    <a href="#">
+                                        <div class="comment__img ">
+                                            <img src="./img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="comment__notify ">
+                                            <span><b>Thằng Nào Đó</b> đã trả lời bình luận của bạn trong truyện <b>Truyện Gì Đó</b></span> <br>
+                                            <i>xx min ago</i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list-notification__comment">
+                                    <a href="#">
+                                        <div class="comment__img ">
+                                            <img src="./img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="comment__notify ">
+                                            <span><b>Thằng Nào Đó</b> đã trả lời bình luận của bạn trong truyện <b>Truyện Gì Đó</b></span> <br>
+                                            <i>xx min ago</i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list-notification__comment">
+                                    <a href="#">
+                                        <div class="comment__img ">
+                                            <img src="./img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="comment__notify ">
+                                            <span><b>Thằng Nào Đó</b> đã trả lời bình luận của bạn trong truyện <b>Truyện Gì Đó</b></span> <br>
+                                            <i>xx min ago</i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="list-notification__comment">
+                                    <a href="#">
+                                        <div class="comment__img ">
+                                            <img src="./img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="comment__notify ">
+                                            <span><b>Thằng Nào Đó</b> đã trả lời bình luận của bạn trong truyện <b>Truyện Gì Đó</b></span> <br>
+                                            <i>xx min ago</i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-user col l-2 m-2 c-0">
+                <a href="#">
+                    <img src="./img/avatar.jpg" alt="">
+                    <div>
+                        <span>Cá Nhân</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </a>
+                <div class="drop-user">
+                    <ul>
+                        <li>
+                           <a href="">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Trang Cá Nhân</span>
+                           </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Truyện Theo Dõi</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <span>Thoát</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="container-user__login">
+                <a href="/login">Đăng Nhập</a>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="navbar grid l-12 m-12 c-0" id="navbar">
+        <div class="navbar-nav grid wide">
+            <ul class=navbar-list>
+                <li class="navbar-list__home" >
+                    <a href="#" id="home" class="home">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </a>
+                </li>
+                <li class="navbar-list__item">
+                    <a href="#" class="setcolor">
+                        <i>HOT</i>
+                    </a>
+                </li>
+                <li class="navbar-list__item">
+                    <a href="#" class="setcolor">
+                        <i>THEO DÕI</i>
+                    </a>
+                </li>
+                <li class="navbar-list__item">
+                    <a href="#" class="setcolor">
+                        <i>LỊCH SỬ</i>
+                    </a>
+                </li>
+                <li class="navbar-list__item category">
+                    <a href="#" class="setcolor">
+                        <span>THỂ LOẠI</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="drop-category grid wide">
+                        <div class="drop-category__list row no-gutters">
+                            <div class="drop-category__item col l-3 m-3">
+                                <ul>
+                                    <li class="item__red">
+                                        <a href="#" title="">Tất cả</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Adult</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Adventure</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Anime</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Chuyển Sinh</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Comedy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Comic</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Cooking</a>
+                                    </li>
+                                    <li class="item__red">
+                                        <a href="#" title="">Cổ Đại</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Doujinshi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Drama</a>
+                                    </li>
+                                    <li class="item__red">
+                                        <a href="#" title="">Đam Mỹ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="drop-category__item col l-3 m-3">
+                                <ul>
+                                    <li>
+                                        <a href="#" title="">Ecchi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Fantasy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Gender Bender</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Harem</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Historical</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Horror</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Josei</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Live Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Manga</a>
+                                    </li>
+                                    <li class="item__red">
+                                        <a href="#" title="">Manhhua</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Manhwa</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Martial Arts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Mature</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="drop-category__item col l-3 m-3">
+                                <ul>
+                                    <li>
+                                        <a href="#" title="">Mecha</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Mystery</a>
+                                    </li>
+                                    <li class="item__red">
+                                        <a href="#" title="">Ngôn Tình</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">One Shot</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Osychological</a>
+                                    </li>
+                                    <li class="item__red">
+                                        <a href="#" title="">Romance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">School Life</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Sci-fi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Seinen</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Shoujo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Shoujo AI</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Shounen</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Shounen Ai</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="drop-category__item col l-3 m-3">
+                                <ul>
+                                    <li>
+                                        <a href="#" title="">Slice of Life</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Smut</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Soft Yaoi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Soft Yuri</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Sports</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Supernatural</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Thiếu Nhi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Tragedy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Trinh Thám</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Truyện Scan</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Truyện Màu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">Webtoon</a>
+                                    </li>
+                                    <li class="item__red">
+                                        <a href="#" title="">Xuyên Không</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="navbar-list__item ratings">
+                    <a href="#" class="setcolor">
+                        <span>XẾP HẠNG</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="drop-ratings grid wide">
+                        <div class="drop-ratings__list row no-gutters">
+                            <div class="drop-ratings__item col l-6 m-6">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span>Top all</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span>Top tháng</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span>Top tuần</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span>Top ngày</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="drop-ratings__item col l-6 m-6">
+                                <ul>
+                                    <li class="rating-comic__full">
+                                        <a href="#">
+                                            <i class="fa-solid fa-signal"></i>
+                                            <span>Truyện full</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-thumbs-up"></i>
+                                            <span>Ưa thích</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-rotate"></i>
+                                            <span>Mới cập nhật</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                                            <span>Truyện mới</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="navbar-list__item">
+                    <a href="#" class="setcolor">
+                        <i>
+                            TÌM TRUYỆN
+                        </i>
+                    </a>
+                </li>
+                <li class="navbar-list__item hide-on-tablet">
+                    <a href="#" class="setcolor">
+                        <i>
+                            CON GÁI
+                        </i>
+                    </a>
+                </li>
+                <li class="navbar-list__item hide-on-tablet">
+                    <a href="#" class="setcolor">
+                        <i>
+                            CON TRAI
+                        </i>
+                    </a>
+                </li>
+                <li class="navbar-list__item">
+                    <a href="#" class="setcolor">
+                        <i>TẢI APP</i>
+                    </a>
+                </li>
+                <li class="navbar-list__item hide-on-tablet">
+                    <a href="#" class="setcolor">
+                        <i>GROUP</i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="user grid wide">
+        <div class="user-container row ">
+            <div class="col l-4 m-6 c-8">
+                <div class="user-sidebar">
+                    <div class="user-menu">
+                        <div class="user-menu__avatar">
+                            <img src="./img/avatar.jpg" alt="">
+                        </div>
+                        <div class="user-menu__username">
+                            <div>
+                                <span>Tài Khoản:</span>
+                                <h3>Maviess10</h3>
+                            </div>
+                        </div>
+                        <div class="user-menu__listbar">
+                            <i class="fa-solid fa-bars" id="user-menu__listbar"></i>
+                        </div>
+                    </div>
+                    <div class="user-list" id="user-listbar">
+                        <ul>
+                            <li class="user-listbar__user">
+                                <a href="./user.html">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>Thông tin </span>
+                                </a>
+                            </li>
+                            <li class="user-listbar__account">
+                                <a href="./user-account.html" style="color: orange;">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>Tài Khoản</span>
+                                </a>
+                            </li>
+                            <li class="user-listbar__followcomic">
+                               <a href="./user-followcomic.html">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span>Truyện theo dõi</span>
+                               </a>
+                            </li>
+                            <li class="user-listbar__changepassword">
+                                <a href="./user-changepassword.html">
+                                    <i class="fa-solid fa-key"></i>
+                                    <span>Đổi mật khẩu</span>
+                                </a>
+                            </li>
+                            <li class="">
+                               <a href="">
+                                    <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+                                    <span>Đăng xuất</span>
+                               </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col userpage">
+                <div class="user-page">
+                    <div class="user-page__header">
+                        <span>THÔNG TIN TÀI KHOẢN</span>
+                    </div>
+                    <div class="row main-page account">
+                        <form class="user-page__account">
+                            <div class="inf info-name">
+                                <p>Họ Và tên:</p>
+                                <input class="user-input" type="text">
+                            </div>
+                            <div class="inf info-gender">
+                                <p>Giới Tính:</p>
+                                <input class="user-input" type="text">
+                            </div>
+                            <div class="inf info-avatar">
+                                <p>Avatar:</p>
+                                <div>
+                                    <img id="avatar-upload" src="./img/avatar.jpg" alt="">
+                                </div>
+                                <input type="file" id="changeavt">
+                            </div>
+                            <div class="account-change">
+                                <button>Thay Đổi</button>
+                            </div>
+
+                        </form>
+                                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var listbar =  document.getElementById("user-listbar")
+        document.getElementById("user-menu__listbar").onclick = function(){
+            if(listbar.style.display != "none"){
+                listbar.style.display = "none"
+            }else{           
+                listbar.style.display = "block"
+            }
+        }
+        
+        function uploadimg(){
+            const uploadImage = (e) => {
+                    const avatar = document.getElementById("avatar-upload") 
+                    let reader = new FileReader()
+                    let img = new Image()
+
+                    reader.onload = () => {                        
+                        img.src = reader.result;
+                        avatar.src =  img.src
+                    }
+                    reader.readAsDataURL(e.target.files[0])
+                    
+            };
+            const imageLoader = document.getElementById('changeavt');
+            imageLoader.addEventListener("change", uploadImage);
+        }
+        uploadimg()
+    </script>
+</body>
+</html>

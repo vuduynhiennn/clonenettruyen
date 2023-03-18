@@ -1,0 +1,349 @@
+.user{
+    height: 500px;
+    margin-top: 100px;
+}
+
+.user-container{
+    height: 500px;
+}
+
+.user-container > .col{
+    padding: 10px;
+    margin: 0px auto;
+}
+
+.user-sidebar{
+    width: 100%;
+}
+
+.user-menu{
+     display: flex;
+     border: 3px solid yellow;
+     /* box-shadow: 5px 5px 10px #a6a6a6; */
+}
+
+.user-menu>*{
+    padding: 10px;
+}
+
+.user-menu__avatar>img{
+    /* background-size: auto; */
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 100em;
+    animation: avatar 2s linear infinite;
+}
+
+@keyframes avatar{ 
+    0%   {box-shadow: 0px 0px 2px red;}
+    50%  {box-shadow: 0px 0px 15px white;}
+    100% {box-shadow: 0px 0px 2px red;}
+}
+
+.user-menu__username{
+    flex: 1;
+}
+
+.user-menu__username>div{
+    text-align: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.user-menu__username>div>span{   
+    overflow: hidden;
+    color: red;
+    font-size: 20px;
+}
+
+
+.user-menu__username>div>h3{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    overflow: hidden;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: white;
+    font-size: 25px;
+}
+
+
+.user-menu__listbar{
+    width: 30px;
+    position: relative;
+}
+
+
+.user-menu__listbar>i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transition: -50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: yellow;
+    cursor: pointer;
+}
+
+.user-menu__listbar>i:hover{
+    color: red;
+}
+
+.user-list{
+    margin-top: 20px;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+#user-listbar{
+    display: block;
+}
+
+.user-list>ul{
+   padding: 10px;
+   list-style: none;
+
+}
+
+.user-list>ul>li{
+    margin: 20px 10px;
+    
+ }
+
+.user-list>ul>li>a{
+    text-decoration: none;
+    color: white;
+ }
+ 
+.user-list>ul>li>a>i{
+    
+    font-size: 25px;
+    color: yellow;
+    padding: 0px 10px;
+ }
+
+.user-list>ul>li>a>span{ 
+    font-size: 18px;
+    margin: 0px 10px;
+    position: relative;
+    line-height: 25px;
+ }
+
+ .user-list>ul>li:hover a>span{
+    color: red;
+    border-bottom: 2px solid red;
+ }
+
+
+.userpage{
+    flex: 1;
+}
+
+.user-page{
+    width: 100%;
+   
+}
+
+.user-page>.main-page{
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 20px 0px;
+}
+
+.user-page__header{
+    text-align: center;
+    height: 100px;
+    border: 5px solid transparent;
+    position: relative;
+}
+
+.user-page__header>span{
+    width: max-content;
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 5px solid yellow;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.user-page__info{
+    box-sizing: border-box;
+}
+
+.user-page__info >.inf{
+    padding: 10px 20px;
+    display: flex;
+}
+
+.user-page__info >.inf>p{
+    width: 150px;
+    color: yellow;
+    font-size: 18px;
+}
+
+.user-page__info >div>span{
+    color: white;
+    font-size: 18px;
+}
+
+
+.user-page__avt{
+    flex: 1;
+    position: relative;
+}
+.user-page__avt>div{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.user-page__avt>div>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.info-progress{
+    padding: 10px 20px;
+}
+
+.progresslevel{
+    width: 90%;
+    margin: auto;
+}
+
+.progresslevel{
+    color: red;
+    font-size: 15px;
+}
+.userlv-now{
+    flex: 1;
+}
+
+
+.progressbar >p{
+    position: relative;
+    height: 18px;
+    border: 1px solid white;
+    border-radius: 100em;
+    background-color: rgb(176, 176, 176);
+    overflow: hidden;
+}
+
+.progressbar >p>span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color:yellow;
+    border-radius: 100em;
+}
+
+.user-page__account > .inf{
+    display: flex;
+    margin: 20px;
+}
+
+.user-page__account > .inf >p{
+    width: 100px;
+    color: yellow;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.user-page__account > .inf > .user-input{
+    flex: 1;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid yellow;
+    color: white;
+    font-size: 20px;
+}
+
+
+.user-page__account >.info-avatar>div{
+    width: 200px;
+}
+
+.user-page__account >.info-avatar>div>img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.user-page__account >.info-avatar>input::-webkit-file-upload-button{
+   visibility: hidden;
+}
+
+.user-page__account >.info-avatar>input{
+    width: 70px;
+    height: 40px;
+    margin: auto 20px;
+}
+
+.user-page__account >.info-avatar>input::before{
+    position: absolute;
+    content: "Chọn";
+    width: 70px;
+    height: 40px;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    line-height: 40px;
+}
+
+.user-page__account >.info-avatar>input:hover::before{
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px;
+    font-size: 18px;
+}
+
+.account-change {
+    text-align: center;
+}
+
+.account-change >button {
+    margin: auto;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(232, 104, 104);
+    font-size: 30px;
+    font-weight: bold;
+}
+ 
+.user-page > .account{
+    width: fit-content;
+    margin: 20px auto;
+}
+
