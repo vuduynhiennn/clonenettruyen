@@ -1,7 +1,11 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+    text-decoration: none;    
+}
+
+a {
+    color: white
 }
 
 body{
@@ -72,12 +76,16 @@ body{
 
 .sm{
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .sm > button{
-    margin: auto;
+    margin: 0.5rem 0 auto;
     height: 50px;
-    width: 200px;
+    padding: 0.4rem 0.4rem;
+    width: fit-content;
+    /* width: 200px; */
     background-color: transparent;
     border: 1px solid white;
     border-radius: 5px;
