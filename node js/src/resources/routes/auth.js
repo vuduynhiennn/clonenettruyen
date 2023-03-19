@@ -9,6 +9,7 @@ var GoogleStrategy = require("passport-google-oidc");
 
 const conn = require("../../connect_db")
 
+
 passport.use(new GoogleStrategy({
     clientID: process.env['GOOGLE_CLIENT_ID'],
     clientSecret: process.env['GOOGLE_CLIENT_SECRET'],
@@ -69,8 +70,10 @@ process.nextTick(function() {
 
 const authRoutes = (app) => {
     router.get("/login", (req, res) => {
-        res.render("login")
+      res.render("login")
     })
+
+
 
     router.get("/register", (req, res) => {
         res.render("register")

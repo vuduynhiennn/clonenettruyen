@@ -37,19 +37,36 @@ app.set('views',path.join(__dirname, 'resources/views'))
 
 
 //connect to my sql
-// const conn = require("./connect_db")
+const conn = require("./connect_db")
+
+// const authRoutes = require("./resources/routes/auth")
+// authRoutes(app)
 
 
-const authRoutes = require("./resources/routes/auth")
-authRoutes(app)
+// const adminRoutes = require("./resources/routes/admin")
+// adminRoutes(app)
 
 
-const adminRoutes = require("./resources/routes/admin")
-adminRoutes(app)
+
+
+
 
 app.get('/', (req, res) => {
-    res.render('home')
+  res.render('home')
 })
+
+var authlogin = require("./resources/routes/login");
+
+
+
+app.use('/', authlogin)
+
+
+
+
+
+
+
 
 
 app.listen(PORT, () => {
