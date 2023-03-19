@@ -1,14 +1,14 @@
 const userServices = {
-    register: (req, res, next) => {   
+    register: (req, res) => {   
         const { username, password, confirmPassword } = req.body
         // check all fields are typed
         if (!password || !username || !confirmPassword) {
-            return res.status(400).json("all fields are required")
+            return res.render("register", { message: "vui lòng nhập đầy đủ các trường"})
         }
 
         // check password and confirm password is not the same
         if (password !== confirmPassword) {
-            return res.status(400).json("Các mật khẩu đã nhập không khớp. Hãy thử lại")
+            return res.render("register", { message: "Các mật khẩu đã nhập không khớp. Hãy thử lại"})
         }
 
         // create connection to mysql
@@ -34,14 +34,14 @@ const userServices = {
             // if result.length == 0, it means there isn't a record has value username in database
             console.log(result)
             if (result.length == 1) {
-                return res.status(400).json(`${username} already exits`)
+                return res.render("register", { message: `${username} đã tồn tại, vui lòng chọn một user khác`})
             }
 
             const sql = `INSERT INTO users (username, pass) VALUES ("${username}", "${password}")`
             conToDb.query(sql, (err, result) => {
                 if (err) console.log(err)
                 conToDb.end()
-                return res.json(`${username} was added`)
+                return res.render("register", { message: `${username} đã đăng kí thành công`})
             })
         })
     },
@@ -49,7 +49,8 @@ const userServices = {
         const { username, password } = req.body
 
         if (!username || !password) {
-            return res.status(400).json("all fields are required")
+            return res.render("login", { message: "vui lòng không để trống các trường" })
+
         }
 
          // create connection to mysql
@@ -68,16 +69,21 @@ const userServices = {
          console.log("Connected to mysql")
          })         // connected to mysql successfully
 
-
         const sql = `SELECT * FROM users WHERE username="${username}"`
         conToDb.query(sql, (err, result) => {
             if (err) console.log(err)
             if (!result.length) {
-                return res.status(404).json(`${username} isn't register yet`)
-            }
-            return res.status(200).json("user logged in")
-        })
+                return res.render("login", { message: `${username} chưa được đăng kí` })
 
+            }
+            if (result[0].pass === password) {
+                const token = "helloconcac";
+                res.redirect("/")
+                return res.render("home", { token: token} )
+            } else {
+                return res.render("login", { message: "mật khẩu không đúng" })
+            }
+        })
     }
 }
 

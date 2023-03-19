@@ -38,7 +38,6 @@ function dashleft(){
 setInterval(() => {
     settime(cout);
     cout = cout +200
-    console.log("dash")
     if(cout>1000){
         cout=0;
     }
