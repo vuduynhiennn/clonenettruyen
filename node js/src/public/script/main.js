@@ -64,7 +64,6 @@ function settime(cout){
 setInterval(() => {
     settime(cout);
     cout = cout +200
-    console.log(cout)
     if(cout>1000){
         cout=0;
     }
@@ -75,14 +74,12 @@ setInterval(() => {
 document.getElementById("nextright").onclick = function(){
     cout=cout+200
     settime(cout)
-    console.log("ê đcmm")
 }
 
 document.getElementById("nextleft").onclick = function(){
     if(cout>=200){
         cout=cout-200
         settime(cout)
-        console.log("ê đcmm")
     }
 }
 

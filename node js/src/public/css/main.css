@@ -2,7 +2,6 @@
     --animation-comic: -33.33333%
 } */
 
-
 .main-container{
     background-color: #252525;
     padding: 0px 0px;
@@ -113,9 +112,6 @@
     cursor: pointer;
 }
 
-.topcomic__nextleft{
-
-}
 
 .topcomic__nextright{
    right: 0; 

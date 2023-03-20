@@ -1,14 +1,16 @@
-<form action="" class="login">
+<form action="/login" class="login" method="post">
         <h3>Đăng Nhập</h3>
        <div class="login-box">
-        <input type="text">
+        <input name="username" type="text" required>
         <label for="">Tài Khoản:</label>
        </div>
        <div class="login-box">
-        <input type="password" id="password">
+        <input name="password" type="password" id="password" required>
         <label for="">Mật Khẩu:</label>
         <i class="fa-solid fa-eye-slash" id="checkpass"></i>
        </div>
+
+       <div class="error-message"> {{message}} </div>
        <div class="sm">
         <button id="sm">Đăng Nhập</button>
         <button>
