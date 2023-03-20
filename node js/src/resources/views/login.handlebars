@@ -10,7 +10,14 @@
         <i class="fa-solid fa-eye-slash" id="checkpass"></i>
        </div>
 
-       <div class="error-message"> {{message}} </div>
+        {{#if message}}
+            <div class="error-message"> {{message}} </div>
+        {{/if}}
+
+       <button class="forgetPassword"> 
+            <a href="/forgetPassword"> Quên mật khẩu </a>
+        </button>
+
        <div class="sm">
         <button id="sm">Đăng Nhập</button>
         <button>

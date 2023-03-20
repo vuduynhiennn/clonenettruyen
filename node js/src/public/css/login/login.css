@@ -8,6 +8,16 @@ a {
     color: white
 }
 
+.forgetPassword {
+    margin-top: -40px;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+.forgetPassword > a {
+    cursor: pointer;
+}
+
 body{
     background-color: rgb(68, 68, 68);
 }
