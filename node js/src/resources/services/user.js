@@ -32,7 +32,6 @@ const userServices = {
         conToDb.query(sql, (err, result) => {
             if (err) return console.log("line 22: ", err)
             // if result.length == 0, it means there isn't a record has value username in database
-            console.log(result)
             if (result.length == 1) {
                 return res.render("register", { message: `${username} đã tồn tại, vui lòng chọn một user khác`})
             }
@@ -77,9 +76,9 @@ const userServices = {
 
             }
             if (result[0].pass === password) {
-                const token = "helloconcac";
-                res.redirect("/")
-                return res.render("home", { token: token} )
+                const tokens = "helloconcac";
+                // res.redirect("/")
+                return res.render("home", { token: tokens} )
             } else {
                 return res.render("login", { message: "mật khẩu không đúng" })
             }

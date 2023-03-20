@@ -5,11 +5,15 @@ const router = express.Router();
 
 const userServices = require("../services/user")
 
+const authMiddleware = require("../middlewares/auth");
+const getComics = require("./getComics")
+
 const authRoutes = (app) => {
   // views
     router.get("/login", (req, res) => {
         res.render("login")
     })
+    
     router.get("/register", (req, res) => {
         res.render("register")
     })
@@ -17,6 +21,12 @@ const authRoutes = (app) => {
   // routing  
     router.post("/register", userServices.register)
     router.post("/login", userServices.login)
+
+
+
+    router.get("/comic", authMiddleware, getComics) // demo
+
+
 
     return app.use("/", router)
 }
