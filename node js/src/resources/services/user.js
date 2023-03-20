@@ -44,7 +44,7 @@ const userServices = {
             })
         })
     },
-    login: (req, res) => {
+    login: (req, res,next) => {
         const { username, password } = req.body
 
         if (!username || !password) {
@@ -76,11 +76,9 @@ const userServices = {
 
             }
             if (result[0].pass === password) {
-                const tokens = "helloconcac";
-                // res.redirect("/")
-                return res.render("home", { token: tokens} )
+                next()
             } else {
-                return res.render("login", { message: "mật khẩu không đúng" })
+                return res.render("login", { message: "mật khẩu không đúng"})
             }
         })
     }

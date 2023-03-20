@@ -7,12 +7,20 @@ const app = express()
 // config
 const config = require("./config/config")
 config(app)
+const conn = require("./config/connect_db")
+
 
 // routes
-app.get('/', (req, res) => res.render('home')) 
-
 const authRoutes = require("./resources/routes/auth")
-authRoutes(app)
+app.use('/', authRoutes)
+
+
+app.get('/', (req, res) => {  
+  conn.query('SELECT * FROM comics',(err,comic)=>{
+    
+    res.render('home',{comic:comic,data:authRoutes.data})
+  })
+}) 
 
 app.listen(PORT, () => console.log(`Example app listening on port http://localhost:${PORT}`))
 
