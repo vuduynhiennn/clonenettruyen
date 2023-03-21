@@ -11,6 +11,12 @@ a {
 body{
     background-color: rgb(68, 68, 68);
 }
+.error-message {
+    color: red;
+    font-size: large;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
 
 .login{
     position: absolute;

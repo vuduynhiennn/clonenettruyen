@@ -86,7 +86,11 @@
     font-size: 13px;
 }
 
-.item--top__img > img{
+.item--top__img >a{
+    width: 100%;
+}
+
+.item--top__img >a> img{
     width: 100%;
 }
 

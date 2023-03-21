@@ -1,0 +1,42 @@
+{{#if isCode}}
+        <form action="/forgetPassword/code" class="login" method="post">
+{{else}}
+        <form action="/forgetPassword" class="login" method="post">
+{{/if}}
+
+        <h3>Lấy lại mật khẩu</h3>
+
+{{#if isCode}}
+
+{{else}}
+       <div class="login-box">
+        <input name="email" type="text" required>
+        <label for="">Tài Khoản email:</label>
+       </div>
+
+       {{#if message}}
+        <div class="error-message"> {{message}} </div>
+       {{/if}}
+
+
+       <div class="login-box">
+                <button class="buttonforgetpass" id="button-ne" onclick="receiveCode"> lấy lại mật khẩu </button>
+        </div>
+{{/if}}
+
+{{#if isCode}}
+        <div class="login-box">
+                <input name="code" type="text"`>
+                <label for="">Nhập code ở đây:</label>
+        </div>
+
+        {{#if message}}
+        <div class="error-message"> {{message}} </div>
+       {{/if}}
+
+          <div class="login-box">
+                <button class="buttonforgetpass" id="button-ne" onclick="sendCode"> xác nhận </button>
+        </div>
+{{/if}}
+
+</form>
