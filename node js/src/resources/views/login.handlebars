@@ -1,14 +1,18 @@
 <form action="/login" class="login" method="post">
         <h3>Đăng Nhập</h3>
        <div class="login-box">
-        <input name="username" type="text" required>
+
+        <input name="username" type="text">
         <label for="">Tài Khoản:</label>
        </div>
        <div class="login-box">
-        <input name="password" type="password" id="password" required>
+        <input name="password" type="password" id="password">
+
+        
         <label for="">Mật Khẩu:</label>
         <i class="fa-solid fa-eye-slash" id="checkpass"></i>
        </div>
+<<<<<<< HEAD
 
         {{#if message}}
             <div class="error-message"> {{message}} </div>
@@ -18,8 +22,10 @@
             <a href="/forgetPassword"> Quên mật khẩu </a>
         </button>
 
+=======
+>>>>>>> ade9496b553bf7b90bcf6dad6816f77d6926f5ce
        <div class="sm">
-        <button id="sm">Đăng Nhập</button>
+        <button type="submit" id="sm" >Đăng Nhập</button>
         <button>
             <a href="/login/federated/google">
                 Đăng nhập với google 
@@ -42,4 +48,5 @@
             console.log("jesd")
             document.getElementById("checkpass").setAttribute("class","fa-solid fa-eye")
         }
+        console.log("hello")
     </script>
